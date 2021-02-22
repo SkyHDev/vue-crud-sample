@@ -53,7 +53,7 @@
         if (employee.name === '' || employee.email === '') return
         this.$emit('edit:employee', employee.id, employee)
         this.editing = null
-      }
+      },
     }
   }
 </script>
@@ -61,5 +61,13 @@
 <style scoped>
   button {
     margin: 0 0.5rem 0 0;
+  }
+
+  input {
+    margin: 0;
+  }
+
+  .empty-table {
+    text-align: center;
   }
 </style>
